@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000018918394965971167120000001587454830381334919_);}
+	.st2{fill:url(#SVGID_00000041253100271588969440000002091054833809329586_);}
+	.st3{fill:url(#SVGID_00000034089857317840420990000002171237699568409233_);}
+</style>
+<g>
+	
+		<radialGradient id="SVGID_1_" cx="489.0237" cy="1084.6089" r="319.1988" gradientTransform="matrix(1 0 0 1 0 -540)" gradientUnits="userSpaceOnUse">
+		<stop  offset="6.751361e-03" style="stop-color:#D6D6D8"/>
+		<stop  offset="0.3775" style="stop-color:#D4D4D7"/>
+		<stop  offset="0.543" style="stop-color:#CDCDD2"/>
+		<stop  offset="0.6677" style="stop-color:#C0C0C9"/>
+		<stop  offset="0.772" style="stop-color:#AEAEBD"/>
+		<stop  offset="0.8634" style="stop-color:#9797AD"/>
+		<stop  offset="0.9446" style="stop-color:#7B7A99"/>
+		<stop  offset="1" style="stop-color:#636289"/>
+	</radialGradient>
+	<path class="st0" d="M766.8,537.8c0,157.6-127.7,285.3-285.3,285.3c-71.3,0-136.4-26.1-186.3-69.2c16.3,2.9,33,4.4,50.1,4.4
+		c157.6,0,285.3-127.7,285.3-285.3c0-86.3-38.4-163.8-99-216.1C665.3,280.5,766.8,397.3,766.8,537.8z"/>
+	
+		<radialGradient id="SVGID_00000162325029888386704260000004658174489438606767_" cx="427.6615" cy="762.5786" r="412.8485" gradientTransform="matrix(1 -9.128227e-03 -4.244089e-03 -0.4649 3.2464 678.8491)" gradientUnits="userSpaceOnUse">
+		<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+		<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+	</radialGradient>
+	
+		<ellipse style="fill:url(#SVGID_00000162325029888386704260000004658174489438606767_);" cx="427.7" cy="320.4" rx="409.7" ry="193.4"/>
+	
+		<radialGradient id="SVGID_00000018214471349195233980000014563738334924613278_" cx="651.1415" cy="439.1815" r="412.8485" gradientTransform="matrix(0.8686 -9.128227e-03 -3.686434e-03 -0.4649 142.1923 799.0624)" gradientUnits="userSpaceOnUse">
+		<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+		<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+	</radialGradient>
+	
+		<ellipse style="fill:url(#SVGID_00000018214471349195233980000014563738334924613278_);" cx="706.2" cy="588.9" rx="355.8" ry="193.4"/>
+	
+		<radialGradient id="SVGID_00000100370375606725153760000006849219193895804063_" cx="446.5525" cy="323.7012" r="412.8485" gradientTransform="matrix(1 -9.128227e-03 -4.244089e-03 -0.4649 1.3822 914.1424)" gradientUnits="userSpaceOnUse">
+		<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+		<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+	</radialGradient>
+	
+		<ellipse style="fill:url(#SVGID_00000100370375606725153760000006849219193895804063_);" cx="446.6" cy="759.6" rx="409.7" ry="193.4"/>
+</g>
+</svg>

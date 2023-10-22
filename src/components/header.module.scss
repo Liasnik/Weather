@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 11px 0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(255, 255, 255);
+  .city_time {
+    padding-bottom: 20px;
+    padding-left: 12px;
+  }
+
+  h2 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 77px;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .main_block {
+    display: flex;
+    justify-content: space-around;
+    height: 97px;
+    gap: 20px;
+
+    span {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: -65px;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        width: 80px;
+        flex-shrink: 0;
+      }
+    }
+  }
+  .text_block {
+    h3 {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
