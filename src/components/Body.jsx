@@ -1,206 +1,206 @@
 import { useSelector } from 'react-redux'
 import styles from './body.module.scss'
 import Days from './cardOfDays/Days'
-import sun from './../images/sunrise619x403.png'
+import sunRise from './../icon/sunrise.svg'
+import sunSet from './../icon/sunset.svg'
 import { SvgSelector } from './SvgSelector'
-import sunSvg from './../icons/01d.svg'
 
-const weatherDate1 = [
-  {
-    time: '18:00',
-    main: {
-      temp: 7,
-    },
-    weather: [
-      {
-        icon: '02d',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '20:00',
-    main: {
-      temp: 4.2,
-    },
-    weather: [
-      {
-        icon: '02n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '21:00',
-    main: {
-      temp: 5.4,
-    },
-    weather: [
-      {
-        icon: '03n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '22:00',
-    main: {
-      temp: 3.0,
-    },
-    weather: [
-      {
-        icon: '04n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '23:00',
-    main: {
-      temp: 4.4,
-    },
-    weather: [
-      {
-        icon: '04n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '06:00',
-    main: {
-      temp: 6.1,
-    },
-    weather: [
-      {
-        icon: '03n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '09:00',
-    main: {
-      temp: 7.0,
-    },
-    weather: [
-      {
-        icon: '01d',
-        main: 'Sun',
-      },
-    ],
-  },
-  {
-    time: '12:00',
-    main: {
-      temp: 8.8,
-    },
-    weather: [
-      {
-        icon: '02d',
-        main: 'Sun',
-      },
-    ],
-  },
-]
-const weatherDate2 = [
-  {
-    time: '00:00',
-    main: {
-      temp: 4.2,
-    },
-    weather: [
-      {
-        icon: '04n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '03:00',
-    main: {
-      temp: 5.4,
-    },
-    weather: [
-      {
-        icon: '02n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '06:00',
-    main: {
-      temp: 6.1,
-    },
-    weather: [
-      {
-        icon: '03n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '09:00',
-    main: {
-      temp: 7.0,
-    },
-    weather: [
-      {
-        icon: '01d',
-        main: 'Sun',
-      },
-    ],
-  },
-  {
-    time: '12:00',
-    main: {
-      temp: 8.8,
-    },
-    weather: [
-      {
-        icon: '02d',
-        main: 'Sun',
-      },
-    ],
-  },
-  {
-    time: '18:00',
-    main: {
-      temp: 7,
-    },
-    weather: [
-      {
-        icon: '02d',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '20:00',
-    main: {
-      temp: 4.2,
-    },
-    weather: [
-      {
-        icon: '02n',
-        main: 'Clouds',
-      },
-    ],
-  },
-  {
-    time: '21:00',
-    main: {
-      temp: 5.4,
-    },
-    weather: [
-      {
-        icon: '03n',
-        main: 'Clouds',
-      },
-    ],
-  },
-]
+// const weatherDate1 = [
+//   {
+//     time: '18:00',
+//     main: {
+//       temp: 7,
+//     },
+//     weather: [
+//       {
+//         icon: '02d',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '20:00',
+//     main: {
+//       temp: 4.2,
+//     },
+//     weather: [
+//       {
+//         icon: '02n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '21:00',
+//     main: {
+//       temp: 5.4,
+//     },
+//     weather: [
+//       {
+//         icon: '03n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '22:00',
+//     main: {
+//       temp: 3.0,
+//     },
+//     weather: [
+//       {
+//         icon: '04n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '23:00',
+//     main: {
+//       temp: 4.4,
+//     },
+//     weather: [
+//       {
+//         icon: '04n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '06:00',
+//     main: {
+//       temp: 6.1,
+//     },
+//     weather: [
+//       {
+//         icon: '03n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '09:00',
+//     main: {
+//       temp: 7.0,
+//     },
+//     weather: [
+//       {
+//         icon: '01d',
+//         main: 'Sun',
+//       },
+//     ],
+//   },
+//   {
+//     time: '12:00',
+//     main: {
+//       temp: 8.8,
+//     },
+//     weather: [
+//       {
+//         icon: '02d',
+//         main: 'Sun',
+//       },
+//     ],
+//   },
+// ]
+// const weatherDate2 = [
+//   {
+//     time: '00:00',
+//     main: {
+//       temp: 4.2,
+//     },
+//     weather: [
+//       {
+//         icon: '04n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '03:00',
+//     main: {
+//       temp: 5.4,
+//     },
+//     weather: [
+//       {
+//         icon: '02n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '06:00',
+//     main: {
+//       temp: 6.1,
+//     },
+//     weather: [
+//       {
+//         icon: '03n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '09:00',
+//     main: {
+//       temp: 7.0,
+//     },
+//     weather: [
+//       {
+//         icon: '01d',
+//         main: 'Sun',
+//       },
+//     ],
+//   },
+//   {
+//     time: '12:00',
+//     main: {
+//       temp: 8.8,
+//     },
+//     weather: [
+//       {
+//         icon: '02d',
+//         main: 'Sun',
+//       },
+//     ],
+//   },
+//   {
+//     time: '18:00',
+//     main: {
+//       temp: 7,
+//     },
+//     weather: [
+//       {
+//         icon: '02d',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '20:00',
+//     main: {
+//       temp: 4.2,
+//     },
+//     weather: [
+//       {
+//         icon: '02n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+//   {
+//     time: '21:00',
+//     main: {
+//       temp: 5.4,
+//     },
+//     weather: [
+//       {
+//         icon: '03n',
+//         main: 'Clouds',
+//       },
+//     ],
+//   },
+// ]
 
 const Body = () => {
   const { weather } = useSelector((state) => state.currentWeather)
@@ -221,13 +221,23 @@ const Body = () => {
   const minutesSunset = sunrise.getMinutes().toString().padStart(2, '0')
   const timeSunset = `${hoursSunset}:${minutesSunset}`
 
+  const date = new Date()
+  const hours = date.getHours()
+
+  let sun
+  if (hours < 12) {
+    sun = sunRise
+  } else if (hours >= 12 && hours <= 23) {
+    sun = sunSet
+  }
+
   return (
     <div className={styles.body}>
       <p>Прогноз на 24 години</p>
       <div className={styles.clocks}>
         <Days forecastData={today} />
       </div>
-      <p>Прогноз на наступні 3 дні</p>
+      <p>Прогноз на наступні 4 дні</p>
       <div className={styles.clocks}>
         <Days forecastData={tomorrow} />
       </div>
@@ -247,8 +257,6 @@ const Body = () => {
         <div className={styles.sun_icon}>
           <img src={sun} alt={'sunrise'} />
         </div>
-
-        <img className={styles.sun_svg_small} src={sunSvg} alt="sun" />
       </div>
 
       <div className={styles.optional_block}>
@@ -261,32 +269,27 @@ const Body = () => {
           Вологість %
         </div>
         <div className={styles.optional}>
-          <div>{weather.wind.speed}</div>
-          Вітер <span>м/с</span>
+          <div>{weather.clouds.all}</div>
+          Хмарність <span>%</span>
         </div>
       </div>
 
       <div className={styles.additional_block}>
         <div>
+          <h2>Відчувається як</h2>
+          <p>{Math.round(weather.main.feels_like)}&deg;C</p>
+        </div>
+        <div>
+          <h2>Швидкість вітру</h2>
+          <p>{weather.wind.speed}м/с</p>
+        </div>
+        <div>
+          <h2>Пориви вітру</h2>
+          <p>{weather.wind.gust}м/с</p>
+        </div>
+        <div>
           <h2>Видимість</h2>
           <p>{weather.visibility}м</p>
-        </div>
-        <div>
-          <h2>Хмарність</h2>
-          <p>{weather.clouds.all}%</p>
-        </div>
-
-        <div>
-          <h2>УФ-індекс</h2>
-          <p>751 </p>
-        </div>
-        <div>
-          <h2>Дорожній рух</h2>
-          <p>Немає</p>
-        </div>
-        <div>
-          <h2>Пилок</h2>
-          <p>20 мг</p>
         </div>
         <div>
           <h2>Повітря</h2>

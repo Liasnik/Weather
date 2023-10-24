@@ -224,7 +224,7 @@ const Menu = ({ setSelectCity }) => {
                       localStorage.removeItem('cities')
                     }}
                   >
-                    Скинути
+                    res
                   </button>
                 </form>
               </div>

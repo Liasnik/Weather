@@ -4,7 +4,7 @@
   padding: 10px 11px 0;
   margin-bottom: 25px;
   padding-bottom: 25px;
-  background-color: rgb(255, 255, 255);
+
   .city_time {
     padding-bottom: 20px;
     padding-left: 12px;
@@ -53,6 +53,7 @@
 
       img {
         width: 80px;
+        height: 80px;
         flex-shrink: 0;
       }
     }

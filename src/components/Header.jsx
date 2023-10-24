@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from './header.module.scss'
 import { useSelector } from 'react-redux'
+import { IconsWhiteSelector } from './IconWhiteSelector'
+// import { IconsSelector } from './IconsSelector'
+// import icon from './../../public/icons/04n.svg'
+// import icon2 from './../icons/04n.svg'
 
 const Header = () => {
   const data = useSelector((state) => state.currentWeather.weather)
@@ -44,10 +48,13 @@ const Header = () => {
 
         <div className={styles.block}>
           <>
-            <img
-              src={`icons/${data.weather[0].icon}.svg`}
+            {/* <IconsSelector id={data.weather[0].icon} /> */}
+            <IconsWhiteSelector id={data.weather[0].icon} />
+            {/* <img
+              src={`icons_gray/${data.weather[0].icon}.svg`}
+              // src={icon2}
               alt={data.weather[0].main}
-            />
+            /> */}
             <p>{description}</p>
           </>
         </div>
