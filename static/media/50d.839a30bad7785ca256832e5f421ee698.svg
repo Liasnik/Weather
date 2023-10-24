@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.32;fill:#FFE500;enable-background:new    ;}
+	.st1{fill:#FFE500;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_00000126286180991794737540000013962763763196862092_);}
+	.st4{fill:url(#SVGID_00000138546333325020070070000007798001098915042187_);}
+</style>
+<g>
+	<circle class="st0" cx="540" cy="540" r="278.5"/>
+	<circle class="st0" cx="540" cy="540" r="238.9"/>
+	<circle class="st1" cx="540" cy="540" r="205.4"/>
+</g>
+<radialGradient id="SVGID_1_" cx="427.6615" cy="762.5786" r="412.8485" gradientTransform="matrix(1 -9.128227e-03 -4.244089e-03 -0.4649 3.2464 678.8491)" gradientUnits="userSpaceOnUse">
+	<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+	<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+</radialGradient>
+<ellipse class="st2" cx="427.7" cy="320.4" rx="409.7" ry="193.4"/>
+<radialGradient id="SVGID_00000065043703687374471280000009596073063621056908_" cx="651.1415" cy="439.1815" r="412.8485" gradientTransform="matrix(0.8686 -9.128227e-03 -3.686434e-03 -0.4649 142.1923 799.0624)" gradientUnits="userSpaceOnUse">
+	<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+	<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+</radialGradient>
+<ellipse style="fill:url(#SVGID_00000065043703687374471280000009596073063621056908_);" cx="706.2" cy="588.9" rx="355.8" ry="193.4"/>
+<radialGradient id="SVGID_00000005989022881273280000000001883018679623350436_" cx="446.5525" cy="323.7012" r="412.8485" gradientTransform="matrix(1 -9.128227e-03 -4.244089e-03 -0.4649 1.3822 914.1424)" gradientUnits="userSpaceOnUse">
+	<stop  offset="1.117318e-02" style="stop-color:#E6E6E6"/>
+	<stop  offset="1" style="stop-color:#E6E6E6;stop-opacity:0"/>
+</radialGradient>
+<ellipse style="fill:url(#SVGID_00000005989022881273280000000001883018679623350436_);" cx="446.6" cy="759.6" rx="409.7" ry="193.4"/>
+</svg>
