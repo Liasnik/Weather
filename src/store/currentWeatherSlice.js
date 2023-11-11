@@ -72,7 +72,7 @@ export const currentWeatherSlice = createSlice({
         status: action.payload.status,
         message: action.payload.statusText,
       }
-      // console.log('%cfetchCurrentWeatherSuccess', 'color: pink', state.weather)
+      console.log('%cfetchCurrentWeatherSuccess', 'color: pink', state.weather)
     },
     fetchCurrentWeatherError(state, action) {
       state.isLoading = false

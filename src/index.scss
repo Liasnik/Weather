@@ -9,8 +9,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(21, 25, 43);
-  position: relative;
+  background-color: rgba(0, 22, 69, 0.66);
+  background-image: url('https://source.unsplash.com/600x900/?nature');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  //position: relative;
 }
 
 code {
@@ -22,8 +26,12 @@ h1,
 h2,
 h3,
 h4,
-h4,
+h5,
 h6,
 p {
   margin: 0;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

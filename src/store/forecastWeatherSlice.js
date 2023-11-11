@@ -190,7 +190,7 @@ export const forecastWeatherSlice = createSlice({
         status: action.payload.status,
         message: action.payload.statusText,
       }
-      // console.log('%cfetchForecastSuccess', 'color: green', state.forecast)
+      console.log('%cfetchForecastSuccess', 'color: green', state.forecast)
     },
     fetchForecastError(state, action) {
       state.isLoading = false

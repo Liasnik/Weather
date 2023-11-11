@@ -29,6 +29,7 @@ function App() {
   // const [weather, setWeather] = useState({})
   // const [selectCity, setSelectCity] = useState('')
   const [city, setSelectCity] = useState(storageCity('city'))
+  const [update, setUpdate] = useState(storageCity(false))
 
   // console.log(city)
 
@@ -50,7 +51,7 @@ function App() {
     //   // Ошибка при загрузке данных
     //   console.error('%cПомилка: ', 'color: yellow', error)
     // })
-  }, [city, dispatch])
+  }, [city, update, dispatch])
 
   // useEffect(() => {
   //   const fetchWeather = async (city) => {
@@ -71,7 +72,7 @@ function App() {
 
   return (
     <div className="App">
-      <Menu setSelectCity={setSelectCity} />
+      <Menu setSelectCity={setSelectCity} setUpdate={setUpdate} />
       <Header />
       <Body />
     </div>

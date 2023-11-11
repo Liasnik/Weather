@@ -9,30 +9,27 @@
   align-items: center;
   padding: 4px;
   gap: 4px;
-  width: 80px;
+  width: 85px;
   height: 130px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #616972;
+  background: #616972d6;
   overflow: hidden;
   box-shadow: 3px 3px 18px -4px rgba(0, 0, 0, 0.51);
+  color: #ffffff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
   h2 {
-    color: #fff;
-    font-family: Montserrat;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
   }
   h3 {
-    color: #ffffff;
-
-    font-family: Montserrat;
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  }
+  h5 {
+    font-size: 12px;
   }
   img {
     width: 30px;
