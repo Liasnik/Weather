@@ -6,7 +6,6 @@ const DetailsForDay = ({ data, time, formattedDate, dayOfWeek }) => {
     <div className={styles.detailsForDayWrapper}>
       <div className={styles.blur}></div>
       <div className={styles.detailsForDay}>
-        {/* <h2>{data.dt_txt}</h2> */}
         <div className={styles.main}>
           <div className={styles.date}>
             <h2>

@@ -13,7 +13,6 @@ const CardDay = ({ data }) => {
 
   const day = date.getDate().toString().padStart(2, '0')
   const month = (date.getMonth() + 1).toString().padStart(2, '0')
-  // const year = date.getFullYear().toString()
   const formattedDate = `${day}.${month}`
 
   const dayOfWeek = date.toLocaleString('default', { weekday: 'long' })
@@ -34,7 +33,6 @@ const CardDay = ({ data }) => {
         alt={data.weather[0].main}
       /> */}
       <h2>{data.main?.temp.toFixed(1)}&deg;c</h2>
-      {/* <h3>{data.weather[0].main}</h3> */}
       {open && (
         <DetailsForDay
           data={data}

@@ -2,17 +2,11 @@ import React from 'react'
 import styles from './header.module.scss'
 import { useSelector } from 'react-redux'
 import { IconsWhiteSelector } from './IconWhiteSelector'
-// import { IconsSelector } from './IconsSelector'
-// import icon from './../../public/icons/04n.svg'
-// import icon2 from './../icons/04n.svg'
 
 const Header = () => {
   const data = useSelector((state) => state.currentWeather.weather)
 
   const d = new Date(data.dt * 1000)
-  // const hours = d.getHours().toString().padStart(2, '0')
-  // const minutes = d.getMinutes().toString().padStart(2, '0')
-  // const time = `${hours}:${minutes}`
 
   const date = d.getDate().toString().padStart(2, '0')
   const month = (d.getMonth() + 1).toString().padStart(2, '0')
@@ -20,12 +14,7 @@ const Header = () => {
 
   const formattedDate = `${date}.${month}.${year}`
 
-  // const date = d.getDate()
-  // const year = d.getFullYear()
-  // const month = d.toLocaleString('default', { month: 'long' })
   const day = d.toLocaleString('default', { weekday: 'long' })
-
-  // const formattedDate = `${day}, ${date}, ${month}, ${year}р.`
 
   const time = d.toLocaleString([], {
     hour: '2-digit',
@@ -60,7 +49,6 @@ const Header = () => {
 
         <div className={styles.block}>
           <>
-            {/* <IconsSelector id={data.weather[0].icon} /> */}
             <IconsWhiteSelector id={data.weather[0].icon} />
             {/* <img
               src={`icons_gray/${data.weather[0].icon}.svg`}

@@ -52,19 +52,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    // box-shadow: 3px 2px 16px -4px rgba(0, 0, 0, 0.51);
     box-shadow: inset -8px -9px 28px -3px rgba(115, 114, 114, 0.51);
   }
 
   .sun {
-    // position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 340px;
     height: 145px;
     flex-shrink: 0;
-    background: #616972d6;
+    background: rgba(96, 104, 113, 0.617);
 
     color: white;
     padding: 17px 0;
@@ -153,7 +150,7 @@
     width: 116px;
     height: 135px;
     border-radius: 8px;
-    background: #616972d6;
+    background: rgba(96, 104, 113, 0.617);
     color: white;
     box-shadow: 3px 5px 22px -4px rgba(0, 0, 0, 0.51);
 
@@ -174,9 +171,8 @@
 .additional_block {
   padding: 21px 12px;
   margin: 20px 0 10px;
-  // height: 350px;
   flex-shrink: 0;
-  background: #616972d6;
+  background: rgba(96, 104, 113, 0.617);
   color: white;
   font-size: 18px;
   font-style: normal;

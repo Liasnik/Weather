@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './menu.module.scss'
 import { useSelector } from 'react-redux'
-// import Select from 'react-select'
 
 const initialCities = [
   {
@@ -55,41 +54,9 @@ const Menu = ({ setSelectCity, setUpdate }) => {
   const [cities, setCities] = useState(
     () => storageCities('cities') || initialCities
   )
-  // const [selectedCity, setSelectedCity] = useState('')
+
   const selectedRef = useRef(null)
   const [labelCity, setLabelCity] = useState('')
-
-  // const [labelCity, setLabelCity] = useState(
-  //   cities.find((city) => city.value === inputCity)?.label ?? cities[0].label
-  // )
-
-  // const selectStyles = {
-  //   control: (styles) => ({
-  //     ...styles,
-  //     backgroundColor: 'rgb(155, 155, 155) ',
-  //     // color: 'rgb(155, 55, 55, 0,2)',
-  //     width: '200px',
-  //     height: '37px',
-  //     border: 'none',
-  //     borderRadius: '10px',
-  //     outline: 'none',
-  //   }),
-  //   input: (styles) => ({
-  //     ...styles,
-  //     color: 'rgb(5, 5, 241) !important',
-  //   }),
-  //   option: (styles) => ({
-  //     ...styles,
-  //     backgroundColor: 'rgb(155, 155, 155)',
-  //     borderBottom: 'darkgray 1px solid',
-  //     padding: '15px',
-  //     cursor: 'pointer',
-  //   }),
-  // }
-
-  // console.log(city)
-  // console.log(cities)
-  // console.log(labelCity)
 
   const d = new Date(weather.dt * 1000)
   const time = d.toLocaleString([], {
@@ -103,13 +70,10 @@ const Menu = ({ setSelectCity, setUpdate }) => {
 
   useEffect(() => {
     const localStorageCity = storageCities('city')
-    // console.log(localStorageCity)
 
     const targetCity = cities.find((city) => city.value === localStorageCity)
-    // console.log(targetCity)
 
     const newCityValue = targetCity?.value ?? cities[0].value
-    // console.log(newCityValue)
 
     const newCityLabel = targetCity?.label ?? cities[0].label
     setLabelCity(newCityLabel)
@@ -140,13 +104,10 @@ const Menu = ({ setSelectCity, setUpdate }) => {
     setSelectCity(valueCity)
 
     const targetCity = cities.find((city) => city.value === valueCity)
-    // console.log(targetCity)
 
-    // setSelectedCity(targetCity)// changed to useRef
     selectedRef.current = targetCity
 
     setLabelCity(targetCity.label)
-    // console.log(targetCity.label)
 
     setLocalStorage('city', valueCity)
   }
@@ -164,7 +125,6 @@ const Menu = ({ setSelectCity, setUpdate }) => {
         },
       ])
 
-    // setSelectCity(city)
     setCity('')
   }
 
@@ -189,24 +149,9 @@ const Menu = ({ setSelectCity, setUpdate }) => {
     setAddLocation((pre) => !pre)
   }
 
-  // let style = []
-  // if (!menu) {
-  //   style = [styles.menu, styles.menu]
-  // } else style = [styles.menu_open, null]
-
   const menuStyle = menu ? [styles.menu_open, null] : [styles.menu, styles.menu]
 
-  // let styleAddButton
-  // if (city) {
-  //   styleAddButton = styles.add
-  // } else styleAddButton = styles.button_disabled
-
   const styleAddButton = city ? styles.add : styles.button_disabled
-
-  // let styleDeleteButton
-  // if (city) {
-  //   styleDeleteButton = styles.buttonDelete
-  // } else styleDeleteButton = styles.button_disabled
 
   const styleDeleteButton = city ? styles.buttonDelete : styles.button_disabled
 
@@ -254,7 +199,6 @@ const Menu = ({ setSelectCity, setUpdate }) => {
 
                 <label htmlFor="select">
                   <div className={styles.label}>Вибрати місто</div>
-                  {/* <Select options={initialCities} styles={selectStyles} /> */}
                   <div className={styles.select}>
                     <select name="city" id="select" onChange={handleChange}>
                       {cities.map((item) => (

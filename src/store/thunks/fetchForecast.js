@@ -11,8 +11,6 @@ export const fetchForecast = createAsyncThunk(
       const response = await getForecast(payload)
 
       if (response.status === 200) {
-        // console.log(response)
-        // console.log(forecastWeatherSlice.actions)
         dispatch(forecastWeatherSlice.actions.fetchForecastSuccess(response))
         return response.data
       } else {
@@ -20,7 +18,6 @@ export const fetchForecast = createAsyncThunk(
         return rejectWithValue(response)
       }
     } catch (error) {
-      // console.log('%cError: ', 'color: blue', error)
       return rejectWithValue(error)
     }
   }
